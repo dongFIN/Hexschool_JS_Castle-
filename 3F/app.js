@@ -52,6 +52,8 @@ function judgeNum(event){
     }
     else if(NUM.classList.contains("back")){
         if(showNum != ""){
+            console.log(showNum.charAt(showNum.length-1))
+            if(showNum.charAt(showNum.length-1) == ".") point = 0
             showNum = showNum.substring(0,showNum.length-1)
             number.textContent = showNum
         }
