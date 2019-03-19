@@ -1,0 +1,9 @@
+#background{
+    width: 1280px;
+    height: 800px;
+    color: #1c291c;
+}
+#second{
+    transition: all 0.1s;
+    transition-timing-function:  cubic-bezier(0.6,-0.86, 0.33, 2.08);
+}

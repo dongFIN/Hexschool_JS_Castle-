@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <div>
+    <svg width="1300" height="900">
+        <rect name ="background" x="0" y="0" fill="#2f2f2f" width="1280" height="800"/>
+        <g name = "clockBody">
+            <rect x="465" y="225" rx="60" ry="60" width="350" height="350" fill="#fffff4" opacity="0.1" />        
+            <circle cx="640" cy="400" r="155" stroke="#4ecdc4" stroke-width="2" fill="#2f2f2f"/>
+            <circle cx="640" cy="400" r="110" stroke="#4ecdc4" stroke-width="3" stroke-dasharray="2 9.5" fill="none" />
+            <circle cx="640" cy="400" r="120" stroke="#ffffff" stroke-width="5" stroke-dasharray="3 60" fill="none" />
+            <circle cx="640" cy="400" r="5" fill="white" />
+        </g>
+        
+        <g name="clockNumber">
+            <path id="T" d="M640 265 A50 50,0 0 1 640 535" stroke="none" fill="none" />
+            <text dx="5,55,60,60,62,60,61" dy="5" rotate="0 330 300 270 240 210 180" fill="white">
+                <textPath xlink:href='#T' >2123456</textPath>
+            </text>
+            <path id="t" d="M640 535 A50 50,0 0 1 640 265" stroke="none" fill="none" />
+            <text dx="68,60,60,60,10,45,2 49" dy="5 5 -5 -5 16 -10 5 -5" rotate="150 120 90 60 50 30 25 0" fill="white">
+                <textPath xlink:href='#t' >78910111</textPath>
+            </text>
+        </g>
+
+        <g name="clockHand">
+            <rect x="0" y="0" width="2" height="100" fill="#f7fff7" />
+            <rect id="min" x="0" y="0" rx="2" ry="2" width="4" height="87" fill="#4ecdc4" />
+            <g id="hour">
+                <rect x="0" y="0" rx="2" ry="2" width="4" height="50" fill="#F24236" />
+                <rect x="1.5" y="35" width="1" height="11" fill="#ffffff"/> 
+            </g>
+                
+            <g id="second">
+                <path id="second" d="M0 0 L45 0 L55 -10 L65 10 L75 0 L110 0" stroke="#4ecdc4" fill="none"/> 
+                <circle cx="110" cy="0" r="4" stroke="#4ecdc4" fill="#2f2f2f" />
+            </g>
+        </g>
+    </svg>
+    
+    </div>
+</body>
+</html>

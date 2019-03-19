@@ -1,0 +1,59 @@
+body{ 
+    background-color: #E8E8E8;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+}
+
+.container{
+    margin-top: 129px;
+    margin-left: 465px;
+    height: 525px;
+    width: 350px;
+    background-color: #062145;
+    box-shadow: 0px 20px 40px 0 #000000;
+    border-radius: 20px;
+}
+.showBox{
+    height: 94px;
+    width: 350px;
+    background-color: #041936;
+    text-align: right;
+    border-radius: 20px 20px 0 0 ;
+    padding-top: 15px;
+}
+.upFunction{
+    color: #00C4FF;
+    font-size: 16px;
+    line-height: 16px;
+    /* margin-top: 20px; */
+    margin-right: 22px;
+}
+.number{
+    font-size: 56px;
+    text-align: right;
+    margin-right: 20px;
+}
+.oprator{
+   background-color: #041936;
+   border-radius: 16px; 
+}
+.buttonAll .ansButton{
+    display: inline-block;
+    width: 155px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(to right,#00C4FF,#6C00FF);
+}
+.buttonAll div{
+    height: 64px;
+    width: 72px;
+    display: inline-block;
+    line-height: 64px;
+    margin: 9px 2px 9px 0;
+}
+.buttonAll div:hover {
+    cursor: pointer;
+}
+
+
