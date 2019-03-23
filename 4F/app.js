@@ -10,11 +10,6 @@ var SD = document.querySelector(".SD")
 reset(1)
 setInterval(reset,3600000)
 function reset(){
-    // var nowHr = 20
-    // var nowMin = 12
-    // var nowDate = 1
-    // var nowMonth = 3
-    // var nowYear = 2220
     var nowHr = UTCtime.getUTCHours()
     var nowMin = UTCtime.getUTCMinutes()
     var nowDate = UTCtime.getUTCDate()
@@ -26,8 +21,6 @@ function reset(){
     addSet(nowHr,nowMin,nowDate,nowMonth,nowYear,BK,7)
     addSet(nowHr,nowMin,nowDate,nowMonth,nowYear,TW,8)
     addSet(nowHr,nowMin,nowDate,nowMonth,nowYear,SD,10)
-
-    //LD.querySelector(".localTime").textContent = (nowHr) + ":" + nowMin;
 }
 
 function subSet(hr,min,date,mon,year,LOCAL,sub){
@@ -112,6 +105,6 @@ function color(hr,LOCAL){
         LOCAL.style.color = "white"
         LOCAL.style.backgroundColor = "black"
     }
-    LOCAL.style.backgroundcolor = "white"
+    LOCAL.style.backgroundColor = "white"
 }
 
