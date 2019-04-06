@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>60 Seconds Challenge</title>
+</head>
+<body>
+    <div class="start ">
+        <div class="icon">+−×÷</div>
+        <svg class="svg">
+            <rect x="0" y="0" width="80px" height="4px" fill="white"></rect>
+            <rect x="0" y="8" width="80px" height="4px" fill="white"></rect>
+        </svg>
+        <p class="title60">60</p>
+        <p class="Stitle">SECONDS<br>CHALLENGE</p>
+        <div>
+            <div class="Button" onclick="startB()">START!</div><br>
+             <p class="Shint" style="color: #FFFFFF">try to answer more as you can</p>
+        </div>
+    </div>
+
+    
+    <div class="main hidden">
+        <div class="time" style="font-Style:italic">01：00</div>
+        <!-- 時間需排版 / 分數無法對齊 / hint無法排版 -->
+        <div class="Mtitle">60 SECONDS CHALLENGE</div><br>
+        <div class="SCORE">SCORE</div>
+        <div class="point">000</div>
+        <div class="Function" style="font-Size:112px;">
+            <div class="num1 IB" >113</div>
+            <div class="opr IB" style="color: #FFFFFF">+</div>
+            <div class="num2 IB">123</div>
+            <div class="IB" style="color: #FFFFFF">=</div>
+            <div class="IB">
+                <input class="ans"type="text" onchange="judge()"><br>
+                <div class="Mhint IB">press enter to answer</div> 
+            </div>    
+        </div>
+    </div>
+
+    <div class="reset hidden"> 
+        <div class="Mtitle">60 SECONDS CHALLENGE</div>
+        <div class="final">
+            <div class="IB" style="color: #FFFFFF">—</div>
+            YOUR FINAL SCORE
+            <div class="IB" style="color: #FFFFFF">—</div>
+        </div>
+        <div class="RScore" style="font-Size:112px; margin-bottom: 100px">74</div>
+        <div class="Button" onclick="resetB()">TRY AGAIN!</div>
+    </div>
+
+    
+</body>
+</html>

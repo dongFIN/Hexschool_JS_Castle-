@@ -100,11 +100,14 @@ function addSet(hr,min,date,mon,year,LOCAL,add){
     color(hr,LOCAL)
 }
 
-function color(hr,LOCAL){
+function color(hr,local){
     if(hr > 17 || hr < 6){
-        LOCAL.style.color = "white"
-        LOCAL.style.backgroundColor = "black"
+        local.style.color = "white"
+        local.style.backgroundColor = "black"
     }
-    LOCAL.style.backgroundColor = "white"
+    else{
+        local.style.color = "black"
+        local.style.backgroundColor = "white"
+    }    
 }
 
