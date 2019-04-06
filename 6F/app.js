@@ -67,7 +67,10 @@ function judge(){
         else nowPoint+=5
         equation(TIME)
     }
-    else nowPoint--
+    else{
+        if(nowPoint> 0)nowPoint--
+        else nowPoint = 0
+    }
     if(nowPoint<10)point.textContent = "00"+ nowPoint
     else if(nowPoint<100)point.textContent = "0"+ nowPoint
     else point.textContent = nowPoint

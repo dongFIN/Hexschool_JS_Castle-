@@ -4,9 +4,6 @@ body{
     font-weight: bold;
     text-align: center;
 }
-.hidden{
-    display: none !important;
-}
 .IB{
     display: inline-block;
 }
@@ -62,6 +59,7 @@ body{
     font-style:  italic;
     font-weight: 100;
     line-height: 28px;
+    font-size: 24px;
     margin: 0;
 }
 .main{
@@ -129,4 +127,7 @@ body{
     font-size: 56px;
     line-height: 66px;
     margin-top: 15px;
+}
+.hidden{
+    display: none ;
 }
